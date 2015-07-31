@@ -1,4 +1,10 @@
-<?php include_once('/../components/header.php'); ?>
+<?php
+$user= $this->session->userdata('user_name');
+if(isset($user)){
+  redirect('','refresh');
+}
+include_once('/../components/header.php');
+?>
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
