@@ -8,6 +8,7 @@ include_once('/../components/header.php');
 <div class="container">
   <div class="row">
   <h1>WELCOME HOME <?php if(isset($user)){echo $user; } ?> !</h1>
+  <p>test example</p>
   </div>
 </div>
 <?php include_once('/../components/footer.php'); ?>
