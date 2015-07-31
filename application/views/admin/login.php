@@ -11,7 +11,7 @@ include_once('/../components/header.php');
     	<div class="signup-box aligncenter">
     	<a href="<?php echo base_url()."login/facebook" ; ?>" class="btn btn-social btn-facebook btn-block"><i class="fa fa-facebook"></i>Login with Facebook</a>
     	<a href="<?php echo base_url()."login/google_login" ; ?>" class="btn btn-social btn-google-plus btn-block"><i class="fa fa-google-plus"></i>Login with Google</a>
-    	<a href="<?php echo base_url()."login/twitter" ; ?>" class="btn btn-social btn-twitter btn-block"><i class="fa fa-twitter"></i>Login with Twitter</a>
+    	<a href="<?php echo base_url()."signup_twitter/auth" ; ?>" class="btn btn-social btn-twitter btn-block"><i class="fa fa-twitter"></i>Login with Twitter</a>
     	<div class="row-separator"><span></span><p>OR</p><span></span></div>
     	<h3>Login with Email</h3>
       	<form>

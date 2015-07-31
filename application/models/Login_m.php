@@ -39,6 +39,14 @@ class Login_m extends CI_Model {
         $u_id = $this->db->get('users');
         return $u_id->result();
     }
+    //insert twitter
+    function insert_from_twitter($users_data,$id) {
+        $sql=  $this->db->query("select id from users where id=".$id);
+        $res= $sql->result();
+        if(count($res)==0){
+            $this->db->query($users_data);
+        }
+   }
 
     //update the password by account settings
     public function updatepassword($user_email, $oldpassword, $newpassword, $confirmpassword) {
@@ -138,13 +146,6 @@ class Login_m extends CI_Model {
        return $ipaddress;
    } 
 
-   function insert_from_twitter($users_data,$id) {
-        $sql=  $this->db->query("select user_id from users where user_id=".$id);
-        $res= $sql->result();
-        if(count($res)==0){
-            $this->db->query($users_data);
-        }
-   }
    public function insert_steps($sql)
     {
         var_dump($sql);
